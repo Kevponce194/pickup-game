@@ -2,9 +2,9 @@
 
 // generate a random number
 let getRandNum = function (start, range) {
-    let getRand = Math.floor((Math.random() * range) + start);
+    let getRand = (Math.random() * range) + start;
     while (getRand > range) {
-        getRand = Math.floor((Math.random() * range) + start);
+        getRand = (Math.random() * range) + start;
     };
     return getRand;
 };
@@ -51,4 +51,10 @@ var Kids = [{
     random: getRandNum(1, 10)
 }];
 
-console.log(Kids[getRandNum(1,10)])
+// console.log(Kids[getRandNum(1,10)])
+
+for (let captCter = 0; captCter < 2; captCter++) {
+    for (let x = 0; x < Kids.length; x++) {
+        console.log(Kids[x]);
+};
+}
