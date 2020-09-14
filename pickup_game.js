@@ -10,7 +10,7 @@ let getRandNum = function (start, range) {
 };
 
 // array of 10 kids
-var kids = [{
+var Kids = [{
     name: "Bobby",
     random: getRandNum(1, 10)
 },
@@ -49,4 +49,6 @@ var kids = [{
 {
     name: "Kim",
     random: getRandNum(1, 10)
-}]
+}];
+
+console.log(Kids[getRandNum(1,10)])
